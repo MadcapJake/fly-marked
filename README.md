@@ -4,7 +4,7 @@
   </a>
 </div>
 
-> [Marked](https://github.com/MadcapJake/fly-marked) plugin for _[Fly][fly]_.
+> [marked](https://github.com/chjj/marked) plugin for _[Fly][fly]_.
 
 [![][fly-badge]][fly]
 [![npm package][npm-ver-link]][releases]
@@ -24,8 +24,12 @@ npm install -D fly-marked
 ### Example
 
 ```js
-export default function* () {
-  yield ...
+export function* md () {
+  yield this
+    .source("src/**/*.md")
+    .marked()
+    .concat("test.html")
+    .target("dist")
 }
 ```
 
