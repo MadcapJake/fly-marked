@@ -13,7 +13,7 @@
 [![][mit-badge]][mit]
 
 ## Usage
-> Check out the [documentation](PLUGIN_DOCUMENTATION) to see the available options.
+> Check out the [documentation](https://github.com/chjj/marked#options-1) to see the available options.
 
 ### Install
 
