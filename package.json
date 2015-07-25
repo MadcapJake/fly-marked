@@ -11,7 +11,11 @@
   "keywords": [
     "fly",
     "fly-plugin",
-    "marked"
+    "marked",
+    "markdown",
+    "compiler",
+    "markup",
+    "html"
   ],
   "scripts": {
     "lint": "eslint *.js",
