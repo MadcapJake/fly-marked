@@ -5,5 +5,5 @@ module.exports = function () {
       marked.setOptions(options)
       return marked(source)
      } catch (e) { throw e }
-  })
+  }, { ext: ".md" })
 }
