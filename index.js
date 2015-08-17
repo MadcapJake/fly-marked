@@ -1,9 +1,10 @@
 const marked = require("marked")
 module.exports = function () {
-  this.filter("marked", (source, options) => {
-    try {
+  this.filter("marked",
+    (source, options) => {
       marked.setOptions(options)
-      return marked(source)
-     } catch (e) { throw e }
-  }, { ext: ".md" })
+      return marked(source.toString())
+    },
+    { ext: ".html" }
+  )
 }
